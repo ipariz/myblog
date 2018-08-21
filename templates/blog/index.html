@@ -1,14 +1,24 @@
 {% extends "blog/base.html" %}
+{% load static %}
+
+{% block style %}
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/index.css' %}"/>
+{% endblock %}
 
 {% block body %}
+	<div id="row">
 	<div id="posts">
 		{% if posts %}
 			{% for post in posts %}
-				<div>
-					{{ post.title }}
-				</div>
-				<div>
-					{{ post.text }}
+				<div class="post">
+					<div class="post-title">
+						<a href="/blog/post/{{post.id}}/">
+							<h3>{{ post.title }}</h3>
+						</a>
+					</div>
+					<div class="post-text">
+						<p>{{ post.text }}</p>
+					</div>
 				</div>
 			{% endfor %}
 		{% else %}
@@ -16,5 +26,7 @@
 		{% endif %}
 	</div>
 	<div id="aside">
+		recent:
+	</div>
 	</div>
 {% endblock %}

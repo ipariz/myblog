@@ -1,0 +1,15 @@
+#header {
+	background-color: black;
+	color: green;
+	text-align: center;
+	padding: 5px;
+	font-size: 50px;
+}
+
+#footer {
+	background-color: green;
+	text-align: center;
+	font-size: 30px;
+	padding: 5px;
+}
+
