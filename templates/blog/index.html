@@ -1,5 +1,20 @@
-{% extends "base.html" %}
+{% extends "blog/base.html" %}
 
 {% block body %}
-
+	<div id="posts">
+		{% if posts %}
+			{% for post in posts %}
+				<div>
+					{{ post.title }}
+				</div>
+				<div>
+					{{ post.text }}
+				</div>
+			{% endfor %}
+		{% else %}
+			no post
+		{% endif %}
+	</div>
+	<div id="aside">
+	</div>
 {% endblock %}

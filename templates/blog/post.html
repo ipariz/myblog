@@ -1,5 +1,24 @@
-{% extends "base.html" %}
+{% extends "blog/base.html" %}
 
 {% block body %}
-
+	<div id="post">
+		<h2>{{ post.title }}</h2>
+		<p>{{ post.text }}</p>
+		<div id="comments">
+			{% if comments %}
+				{% for comment in comments%}
+					<div>
+						{{ comment.author }}
+					</div>
+					<div>
+						{{ comment.text }}
+					</div>
+				{% endfor %}
+			{% else %}
+				write your comment here
+			{% endif %}
+		</div>
+	</div>
+	<div id="aside">
+	</div>
 {% endblock %}

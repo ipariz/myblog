@@ -21,7 +21,7 @@ class Comment(models.Model):
 class Post(models.Model):
 	title = models.CharField(max_length=100)
 	text = models.TextField("post text")
-	comments = models.ManyToManyField(Comment)
+	comments = models.ManyToManyField(Comment, blank=True)
 	author = models.ForeignKey(Author)
 	created_date = models.DateTimeField()
 	
