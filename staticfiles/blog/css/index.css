@@ -2,12 +2,18 @@
 	box-sizing: border-box;
 }
 
+body {
+	margin: 0px;
+}
+
 #header {
 	background-color: black;
 	color: green;
 	text-align: center;
 	padding: 5px;
 	font-size: 50px;
+	position: sticky;
+	top: 0;
 }
 
 #footer {
@@ -23,24 +29,24 @@
 }
 
 #posts {
-	flex: 80%;
+	flex: 70%;
 }
 
 #aside {
-	flex: 20%;
+	flex: 30%;
 	padding: 5px 5px;
 }
 
 .post {
-	height: 300px;
-	margin: 10px 5px;
+	margin: 10px 10px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 .post-title {
-	padding: 5px 10px 0px;
-	width: auto;
-	height: auto;
+	padding-left: 10px;
+	display: inline-block;
+	/*
+	border: black solid 1px;*/
 }
 
 a {
@@ -54,5 +60,9 @@ a:hover {
 
 .post-text {
 	padding: 0px 15px 5px;
+	text-align: justify;
+	font-size: 20px;
+	height: 150px;
+	overflow: hidden;
 }
 
