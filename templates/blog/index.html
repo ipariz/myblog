@@ -7,26 +7,26 @@
 
 {% block body %}
 	<div id="row">
-	<div id="posts">
-		{% if posts %}
-			{% for post in posts %}
-				<div class="post">
-					<div class="post-title">
-						<a href="/blog/post/{{post.id}}/">
-							<h2>{{ post.title }}</h2>
-						</a>
+		<div id="posts">
+			{% if posts %}
+				{% for post in posts %}
+					<div class="post">
+						<div class="post-title">
+							<a href="/blog/post/{{post.id}}/">
+								<h2>{{ post.title }}</h2>
+							</a>
+						</div>
+						<div class="post-text">
+							<p>{{ post.text }}</p>
+						</div>
 					</div>
-					<div class="post-text">
-						<p>{{ post.text }}</p>
-					</div>
-				</div>
-			{% endfor %}
-		{% else %}
-			no post
-		{% endif %}
-	</div>
-	<div id="aside">
-		recent:
-	</div>
+				{% endfor %}
+			{% else %}
+				no post
+			{% endif %}
+		</div>
+		<div id="aside">
+			recent:
+		</div>
 	</div>
 {% endblock %}

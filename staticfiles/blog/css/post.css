@@ -1,9 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+}
+
 #header {
 	background-color: black;
 	color: green;
 	text-align: center;
 	padding: 5px;
 	font-size: 50px;
+	position: sticky;
+	top: 0;
 }
 
 #footer {
@@ -11,5 +21,75 @@
 	text-align: center;
 	font-size: 30px;
 	padding: 5px;
+}
+
+#row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#post-container {
+	flex: 70%;
+}
+
+#post {
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+#post-title {
+	padding: 1px 10px;
+	margin: 10px;
+	/*
+	border: black solid 1px;*/
+}
+
+#post-text {
+	padding: 0px 15px 5px;
+	margin: 5px 15px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#comments {
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+#comment-container {
+	margin: 5px 0px;
+	background-color: gray;
+	padding: 2px;
+}
+
+.comment-author-container {
+	color: green;
+	background-color: black;
+	padding: 2px;
+	margin: 3px 3px 0px;
+	font-size: 18px;
+	overflow: auto;
+}
+
+.comment-author {
+	float: left;
+}
+
+.comment-date {
+	float: right;
+}
+
+.comment-text {
+	color: white;
+	padding: 5px 10px;
+	margin: 0px 3px 3px;
+	font-size: 20px;
+	background-color: blue;
+}
+
+#aside {
+	flex: 30%;
+	padding: 5px 5px;
 }
 
