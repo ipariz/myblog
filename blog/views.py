@@ -8,7 +8,7 @@ def index_view(request):
 	
 def post_view(request, post_id):
 	post = Post.objects.get(pk=post_id)
-	comments = post.comments.all()
+	comments = post.comments.order_by("-created_date")
 	context = {'comments': comments, 'post': post}
 	return render(request, "blog/post.html", context)
 	
