@@ -1,68 +1,68 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0px;
+    margin: 0px;
 }
 
 #header {
-	background-color: black;
-	color: green;
-	text-align: center;
-	padding: 5px;
-	font-size: 50px;
-	position: sticky;
-	top: 0;
+    background-color: black;
+    color: green;
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+    position: sticky;
+    top: 0;
 }
 
 #footer {
-	background-color: green;
-	text-align: center;
-	font-size: 30px;
-	padding: 5px;
+    background-color: green;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
 }
 
 #row {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #posts {
-	flex: 70%;
+    flex: 70%;
 }
 
 #aside {
-	flex: 30%;
-	padding: 5px 5px;
+    flex: 30%;
+    padding: 5px 5px;
 }
 
 .post {
-	margin: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 .post-title {
-	padding: 1px 10px;
-	display: inline-block;
-	/*
-	border: black solid 1px;*/
+    padding: 1px 10px;
+    display: inline-block;
+    /*
+    border: black solid 1px;*/
 }
 
 a {
-	color: blue;
-	text-decoration: none;
+    color: blue;
+    text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .post-text {
-	padding: 0px 15px 5px;
-	text-align: justify;
-	font-size: 20px;
-	height: 150px;
-	overflow: hidden;
+    padding: 0px 15px 5px;
+    text-align: justify;
+    font-size: 20px;
+    height: 150px;
+    overflow: hidden;
 }
 

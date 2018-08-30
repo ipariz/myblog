@@ -2,46 +2,46 @@
 {% load static %}
 
 {% block style %}
-	<link rel="stylesheet" href="{% static 'blog/css/post.css' %}"
+    <link rel="stylesheet" href="{% static 'blog/css/post.css' %}"
 {% endblock %}
 
 {% block body %}
-	<div id="row">
-		<div id="post-container">
-			<div id="post">
-				<div id="post-title">
-					<h2>{{ post.title }}</h2>
-				</div>
-				<div id="post-text">
-					<p>{{ post.text }}</p>
-				</div>
-			</div>
-			<div id="comments">
-				<h2>Comments</h2>
-				{% if comments %}
-					{% for comment in comments%}
-						<div id="comment-container">
-							<div class="comment-author-container">
-								<span class="comment-author">
-									{{ comment.author }}
-								</span>
-								<span class="comment-date">
-									{{comment.created_date}}
-								</span>
-							</div>
-							<div class="comment-text">
-								{{ comment.text }}
-							</div>
-						</div>
-					{% endfor %}
-				{% else %}
-					<h3>write your comment here</h3>
-				{% endif %}
-			</div>
-		</div>
-		<div id="aside">
-			recent:
-		</div>
-	</div>
-	
+    <div id="row">
+        <div id="post-container">
+            <div id="post">
+                <div id="post-title">
+                    <h2>{{ post.title }}</h2>
+                </div>
+                <div id="post-text">
+                    <p>{{ post.text }}</p>
+                </div>
+            </div>
+            <div id="comments">
+                <h2>Comments</h2>
+                {% if comments %}
+                    {% for comment in comments%}
+                        <div id="comment-container">
+                            <div class="comment-author-container">
+                                <span class="comment-author">
+                                    {{ comment.author }}
+                                </span>
+                                <span class="comment-date">
+                                    {{comment.created_date}}
+                                </span>
+                            </div>
+                            <div class="comment-text">
+                                {{ comment.text }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <h3>write your comment here</h3>
+                {% endif %}
+            </div>
+        </div>
+        <div id="aside">
+            recent:
+        </div>
+    </div>
+    
 {% endblock %}
