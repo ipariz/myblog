@@ -19,7 +19,7 @@
             <div id="comments">
                 <h2>Comments</h2>
                 {% if comments %}
-                    {% for comment in comments%}
+                    {% for comment in comments %}
                         <div id="comment-container">
                             <div class="comment-author-container">
                                 <span class="comment-author">
@@ -40,7 +40,16 @@
             </div>
         </div>
         <div id="aside">
-            recent:
+            <div class="aside-container">
+            <h3>Recents</h3>
+            <ul class="recent-list">
+            {% for post in posts %}
+                <li class="recent-items">
+                    <a href="/blog/post/{{ post.id }}/">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+            </div>
         </div>
     </div>
     
