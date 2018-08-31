@@ -11,9 +11,9 @@
             {% if posts %}
                 {% for post in posts %}
                     <div class="post">
-                        <div class="post-title">
+                        <div>
                             <a href="/blog/post/{{post.id}}/">
-                                <h2>{{ post.title }}</h2>
+                                <h2 class="post-title">{{ post.title }}</h2>
                             </a>
                         </div>
                         <div class="post-text">

@@ -43,26 +43,23 @@ body {
 }
 
 .post-title {
-    padding: 1px 10px;
+    padding: 5px 10px;
+    margin: 10px 5px 0px;
     display: inline-block;
     /*
     border: black solid 1px;*/
 }
 
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
+.post-title:hover {
     text-decoration: underline;
 }
 
 .post-text {
     padding: 0px 15px 5px;
+    margin: 0px 5px 5px;
     text-align: justify;
     font-size: 20px;
-    height: 150px;
+    min-height: 150px;
     overflow: hidden;
 }
 
@@ -72,6 +69,15 @@ a:hover {
     margin: 10px 10px 10px 0px;
     position: sticky;
     top: 80px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .recent-list {
