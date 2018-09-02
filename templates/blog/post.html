@@ -35,8 +35,15 @@
                         </div>
                     {% endfor %}
                 {% else %}
-                    <h3>write your comment here</h3>
+                    <p id="no-comment">write your comment here</p>
                 {% endif %}
+                <div class="comment-form">
+                <form>
+                    <input id="comment-input" type="text" name="comment">
+                    <p id="comment-label">Your comment</p>
+                    <input id="comment-submit" type="submit" value="Submit">
+                </form>
+                </div>
             </div>
         </div>
         <div id="aside">
