@@ -9,11 +9,13 @@
     <div id="row">
         <div id="post-container">
             <div id="post">
-                <div>
+                <div style="overflow: auto;">
                     <h2 id="post-title">{{ post.title }}</h2>
+                    <span id="post-date"><strong>{{ post.created_date }}
+                    </strong></span>
                 </div>
                 <div id="post-text">
-                    <p>{{ post.text }}</p>
+                    <p style="margin: 0;">{{ post.text }}</p>
                 </div>
             </div>
             <div id="comments">
